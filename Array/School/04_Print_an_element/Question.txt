@@ -1,0 +1,27 @@
+LINK TO THE QUESTION - https://practice.geeksforgeeks.org/problems/c-array-print-an-element-set-2/0/?category[]=Arrays&difficulty[]=-2&page=1&query=category[]Arraysdifficulty[]-2page1
+
+Given an array A[] of N integers and an index I. Your task is to print the element present at index I in the array.
+
+Input:
+First line of input contains an integer T, which denotes the number of testcases. For each testcase,  there will be two lines. The first line contains two space separated integers N and I, where N denotes the number of elements in the array and I denotes the index whose element has to be printed, and second line contains N space separated integers which denotes the elements of array.
+
+Output:
+For each testcase in a new line, print the element present at index I.
+
+Constraints:
+1 <= T <= 10
+1 <= N <= 100
+0 <= I <= N - 1
+1 <= A[i] <= 100
+
+Example:
+Input:
+2
+5 2
+10 20 30 40 50
+7 4
+10 20 30 40 50 60 70
+
+Output:
+30
+50
