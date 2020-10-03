@@ -1,0 +1,26 @@
+
+
+class Solution
+{
+public:
+    int minValueToBalance(int a[], int n)
+    {
+       //code here.
+       int number=n/2;
+       int sum1=0;
+       int sum2=0;
+       for(int i=0;i<number;i++){
+           sum1+=a[i];
+       }
+       for(int i=number;i<n;i++){
+           sum2+=a[i];
+       }
+       int diff=sum1-sum2;
+       if(diff>0){
+           return diff;
+       }
+       else{
+           return -diff;
+       }
+    }
+};
