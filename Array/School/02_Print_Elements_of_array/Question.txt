@@ -1,3 +1,5 @@
+LINK TO THE PROBLEM - https://practice.geeksforgeeks.org/problems/print-elements-of-array4910/1/?category[]=Arrays&difficulty[]=-2&page=1&query=category[]Arraysdifficulty[]-2page1
+
 Given an array Arr of size N, print all its elements.
 
 Example 1:
