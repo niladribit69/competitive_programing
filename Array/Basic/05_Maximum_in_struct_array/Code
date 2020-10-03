@@ -1,0 +1,15 @@
+int findMax(Height arr[], int n)
+{
+    // Code here
+   int maximum=0;
+   int result;
+    for(int i=0;i<n;i++){
+        int feet=arr[i].feet;
+        int inches=arr[i].inches;
+        result=feet*12+inches;
+        if(result>maximum){
+            maximum=result;
+        }
+    }
+    return maximum;
+}
