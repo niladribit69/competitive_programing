@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	//code
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,d,sum;
+	    cin>>n>>d;
+	    int car[n];
+	    int fine[n];
+	    for(int i =0;i<n;i++){
+	        cin>>car[i];
+	    }
+	    for(int i =0;i<n;i++){
+	        cin>>fine[i];
+	    }
+	    sum=0;
+	    if(d%2==0){
+	        for(int i=0;i<n;i++){
+	            if(car[i]%2!=0){
+	                sum+=fine[i];
+	            }
+	        }
+	    }
+	    else if(d%2!=0){
+	        for(int i=0;i<n;i++){
+	            if(car[i]%2==0){
+	                sum+=fine[i];
+	            }
+	        }
+	    }
+	    cout<<sum<<endl;
+	}
+	return 0;
+}
