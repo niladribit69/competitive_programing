@@ -1,0 +1,17 @@
+STL - STANDARD TEMPLATE LIBRARY
+
+It consists of 3 components :-
+1.Container
+2.Iterator
+3.Algorithm
+
+->STD::array in C++
+    link - https://www.geeksforgeeks.org/stdarray-in-cpp/
+           https://www.studytonight.com/cpp/stl/stl-container-array
+   
+->VECTOR in C++
+    link - https://www.studytonight.com/cpp/stl/stl-container-vector
+    YOUTUBE VIDEO - https://www.youtube.com/watch?v=bADtYBxrM8I&list=PLk6CEY9XxSIA-xo3HRYC3M0Aitzdut7AA&index=3
+    
+->SET IN C++
+    YOUTUBE VIDEO - https://www.youtube.com/watch?v=1YpxRmsDuls&list=PLk6CEY9XxSIA-xo3HRYC3M0Aitzdut7AA&index=5
