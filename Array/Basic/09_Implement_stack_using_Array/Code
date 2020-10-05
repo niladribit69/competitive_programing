@@ -1,0 +1,14 @@
+void MyStack :: push(int x)
+{
+        // Your Code
+        arr[++top]=x;
+}
+
+/*The method pop which return the element 
+  poped out of the stack*/
+int MyStack :: pop()
+{
+        // Your Code       
+        if(top!=-1) return arr[top--];
+else return -1;
+}
