@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	//code
+	int t;
+	cin>>t;
+	while(t--){
+	    int a[10];
+	    for(int i=0;i<10;i++)
+            cin>>a[i];
+        int res;
+        if(a[3]==a[4])
+            res=a[3];
+        else if(a[4]==a[5])
+            res=a[4];
+        else
+            res=a[5];
+        cout<<res<<endl;
+	}
+	return 0;
+}
