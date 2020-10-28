@@ -1,0 +1,11 @@
+
+bool check(vector<ll> arr, vector<ll> brr, int n) {
+    //code here
+    unordered_set<int> s1(arr.begin(),arr.end());
+unordered_set<int> s2(brr.begin(),brr.end());
+
+if(s1==s2)
+return true;
+else
+return false;
+}
