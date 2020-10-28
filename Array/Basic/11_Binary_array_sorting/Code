@@ -1,0 +1,20 @@
+void binSort(int A[], int N)
+{
+   //Your code here
+   int l=0;
+   int r=N-1;
+   while(l<r){
+       if(A[l]==1){
+           swap(A[l],A[r]);
+           r--;
+       }
+       else{
+           l++;
+       }
+   }
+   
+   
+   /**************
+    * No need to print the array
+    * ************/
+}
