@@ -1,0 +1,24 @@
+LINK - https://practice.geeksforgeeks.org/problems/sum-of-numbers-in-string-1587115621/1/?category[]=Strings&problemStatus=unsolved&page=1&query=category[]StringsproblemStatusunsolvedpage1#
+
+
+
+
+int findSum(string s)
+{
+	
+        int sum = 0;
+        string str = "";
+        s = s + " ";
+        
+        for(int i = 0; i < s.length(); i++)
+        {
+            char ch = s[i];
+            if(isdigit(ch)) 
+            str += ch;
+            else if(str.length() > 0)
+            {sum += stoi(str);
+             str = "";}
+        }
+        return sum;
+	
+}
