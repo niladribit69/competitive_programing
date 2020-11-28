@@ -1,0 +1,13 @@
+  LINK  -   https://www.hackerrank.com/challenges/java-generics/problem
+
+
+
+class Printer
+{
+    //Write your code here
+    public void printArray(Object[] array) {
+        for (Object obj : array) {
+            System.out.println(obj);
+        }
+    }
+}
