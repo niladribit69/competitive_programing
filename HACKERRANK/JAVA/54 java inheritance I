@@ -1,0 +1,15 @@
+LINK - https://www.hackerrank.com/challenges/java-inheritance-1/problem
+
+
+
+class Bird extends Animal implements asd{
+	void fly(){
+		System.out.println("I am flying");
+	}
+    public void sing() {
+        System.out.println("I am singing");
+    }
+}
+interface asd{
+    void sing();
+}
