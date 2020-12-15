@@ -1,0 +1,51 @@
+LINK - https://practice.geeksforgeeks.org/problems/rock-paper-scissors/0/?category[]=Strings&problemStatus=unsolved&page=1&query=category[]StringsproblemStatusunsolvedpage1#
+
+
+#include <iostream>
+using namespace std;
+
+string rockPaperScissors(string G)
+{
+    if(G[0] == G[1])
+    {
+        return "DRAW";
+    }
+    else if(G[0] == 'R' and G[1] == 'S')
+    {
+        return "A";
+    }
+    else if(G[1] == 'R' and G[0] == 'S')
+    {
+        return "B";
+    }
+    else if(G[0] == 'S' and G[1] == 'P')
+    {
+        return "A";
+    }
+    else if(G[1] == 'S' and G[0] == 'P')
+    {
+        return "B";
+    }
+    else if(G[0] == 'P' and G[1] == 'R')
+    {
+        return "A";
+    }
+    else if(G[1] == 'P' and G[0] == 'R')
+    {
+        return "B";
+    }
+}
+int main() {
+	//code
+	 int T;
+    cin >> T;
+    
+    while(T--)
+    {
+        string G;
+        cin >> G;
+        
+        cout << rockPaperScissors(G) << endl;
+    }
+	return 0;
+}
