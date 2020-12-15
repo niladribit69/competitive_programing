@@ -1,0 +1,22 @@
+LINK - https://practice.geeksforgeeks.org/problems/minimum-changes-to-make-all-substrings-distinct/0/?category[]=Strings&problemStatus=unsolved&page=1&query=category[]StringsproblemStatusunsolvedpage1#
+
+#include <iostream>
+using namespace std;
+#include<set>
+
+int main() {
+	//code
+	    int T;
+    cin >> T;
+    
+    while(T--)
+    {
+        string str;
+        cin >> str;
+        set <char> set_name(begin(str), end(str));
+        cout<<str.size()-set_name.size()<<endl;
+        
+        
+    }
+	return 0;
+}
