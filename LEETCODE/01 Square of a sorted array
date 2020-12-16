@@ -1,0 +1,29 @@
+LINK - https://leetcode.com/explore/featured/card/december-leetcoding-challenge/571/week-3-december-15th-december-21st/3567/
+
+SOL1:-
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+         vector<int> v;
+        for(int i =0;i<nums.size();i++){
+            v.push_back(nums[i]*nums[i]);
+        }
+        sort(v.begin(),v.end());
+        return v;
+    }
+};
+
+
+SOL2:-
+class Solution {
+public:
+    int sq(int &n) {return n*n;};
+    vector<int> sortedSquares(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> ans(n);
+        int l = 0, r = n-1;
+        while(l <= r)
+            ans[--n] = sq(nums[l])>sq(nums[r]) ? sq(nums[l++]) : sq(nums[r--]);
+        return ans;
+    }
+};
