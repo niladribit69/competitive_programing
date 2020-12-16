@@ -1,0 +1,10 @@
+LINK - https://practice.geeksforgeeks.org/problems/java-convert-string-to-lowercase2313/1/?category[]=Strings&problemStatus=unsolved&page=1&query=category[]StringsproblemStatusunsolvedpage1#
+
+class Solution {
+  public:
+    string toLower(string S) {
+        // code here
+      transform(S.begin(), S.end(), S.begin(), ::tolower);
+      return S;
+    }
+};
