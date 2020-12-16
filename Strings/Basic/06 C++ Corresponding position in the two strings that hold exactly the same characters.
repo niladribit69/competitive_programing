@@ -1,0 +1,27 @@
+LINK  - https://practice.geeksforgeeks.org/problems/c-corresponding-position-in-the-two-strings-that-hold-exactly-the-same-characters/0/?category[]=Strings&problemStatus=unsolved&page=1&query=category[]StringsproblemStatusunsolvedpage1#
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	//code
+		int t;
+	cin>>t;
+
+	string s1,s2,s11,s22;
+	while(t--){
+	   	int i=0,count=0;
+	   cin>>s1>>s2;
+	   while(i<s1.length()){
+	       if(s1[i] == s2[i] || s1[i]+32 == s2[i] || s1[i]==s2[i]+32 || s1[i]+32 == s2[i]+32)
+	           count++;
+	       
+	       i++;
+	       
+	   }
+	    cout<<count<<endl;
+	   
+	}
+	return 0;
+}
