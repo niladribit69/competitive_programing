@@ -1,0 +1,16 @@
+LINK - https://practice.geeksforgeeks.org/problems/linked-list-length-even-or-odd/1/?category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1
+
+int isLengthEvenOrOdd(struct Node* head)
+{
+     //Code here
+     int count=0;
+     Node* current=head;
+     while(current!=NULL){
+         count++;
+         current=current->next;
+     }
+     if(count%2==0){
+         return 0;
+     }
+     return 1;
+}
