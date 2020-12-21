@@ -1,0 +1,15 @@
+LINK - https://practice.geeksforgeeks.org/problems/occurence-of-an-integer-in-a-linked-list/1/?category[]=Linked%20List&problemStatus=unsolved&page=1&query=category[]Linked%20ListproblemStatusunsolvedpage1
+
+int count(struct node* head, int search_for)
+{
+//add your code here
+int count=0;
+node* current=head;
+while(current!=NULL){
+    if(current->data==search_for){
+        count++;
+    }
+    current=current->next;
+}
+return count;
+}
